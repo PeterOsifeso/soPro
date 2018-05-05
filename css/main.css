@@ -1,0 +1,93 @@
+.container {
+  padding: 20px;
+}
+.label {
+  width: 20%;
+}
+.stage-conversion-rate {
+  width: 18%;
+}
+.funnel {
+  width: 42%;
+}
+.cost-per {
+  width: 20%;
+}
+.form-group {
+  margin-top: 2.5rem;
+}
+.input-group {
+  max-height: 40px;
+}
+label {
+  text-align: center;
+}
+.main-label {
+  font-weight: bold;
+  color: #6b5a00;
+}
+.bar-group {
+  margin-bottom: 1.3rem;
+}
+.bar {
+  max-width: 100%;
+  min-width: 12%;
+  height: 35px;
+  margin: 0 auto;
+  position: relative;
+}
+.blue {
+  background-color: #2196F3;
+}
+.green {
+  background-color: #4CAF50;
+}
+.bar-percent {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  color:#fff;
+  text-align: center;
+}
+.grey  {
+  color: #808080;
+}
+td, th {
+    text-align: center;
+    padding: 0 2% 0 2%;
+}
+td {
+  height: 70px;
+  min-height: 70px;
+}
+.money {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 760px), 
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  table, thead, tbody, th, td, tr {
+		display: block; 
+  }
+  thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+  }
+  tr { 
+    border: 0.1px solid #ccc;
+  }
+  td {
+    height: auto;
+    min-height: auto;
+  }
+	td:nth-of-type(2):before {
+    content: "Stage Conversion Rate";
+  }
+	td:nth-of-type(3):before {
+    content: "Funnel Stage";
+  }
+  td:nth-of-type(4):before {
+    content: "Cost Per: ";
+  }
+}

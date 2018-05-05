@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SoPro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h3 class="text-center">DOES THE SOPRO MODEL WORK FOR YOUR BUSINESS?</h3>
+    <table width="100%">
+      <thead>
+        <tr>
+          <th class="label"></th>
+          <th class="stage-conversion-rate">Stage Conversion Rate</th>
+          <th class="funnel">Funnel Stage</th>
+          <th class="cost-per">Cost Per</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <label for="prospect-universe" class="col-form-label main-label">ENTER PROSPECT UNIVERSE</label>
+          </td>
+          <td>
+            <div class="input-group">
+              <input class="form-control" id="prospect-universe" maxlength="3"/>
+              <div class="input-group-append">
+                <span class="input-group-text">%</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="bar-group">
+              <h5 class="text-center grey">PROSPECT UNIVERSE</h5>
+              <div class="bar blue" id="universe-bar">
+                <div class="bar-percent" id="universe-bar-percent"></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="grey soProAverage">
+          <td>
+            <label for="static" class="col-form-label">SoPro Average</label>
+          </td>
+          <td>
+            <span>95%</span>
+          </td>
+          <td>
+            <div class="bar-group">
+              <h5 class="text-center grey">PROSPECTS ENGAGED</h5>
+              <div class="bar blue" id="engaged-bar">
+                <div class="bar-percent" id="engaged-bar-percent"></div>
+              </div>
+            </div>
+          </td>
+          <td class="money">£2</td>
+        </tr>
+
+        <tr class="grey soProAverage">
+          <td>
+            <label for="static" class="col-form-label">SoPro Average</label>
+          </td>
+          <td>
+            <span>40%</span>
+          </td>
+          <td>
+            <div class="bar-group">
+              <h5 class="text-center grey">OPENS</h5>
+              <div class="bar blue" id="opens-bar">
+                <div class="bar-percent" id="opens-bar-percent"></div>
+              </div>
+            </div>
+          </td>
+          <td class="money">£4.94</td>
+        </tr>
+
+        <tr class="grey soProAverage">
+          <td>
+            <label for="static" class="col-form-label">SoPro Average</label>
+          </td>
+          <td>
+            <span>33%</span>
+          </td>
+          <td>
+            <div class="bar-group">
+              <h5 class="text-center grey">RESPONSES</h5>
+              <div class="bar blue" id="responses-bar">
+                <div class="bar-percent" id="responses-bar-percent"></div>
+              </div>
+            </div>
+          </td>
+          <td class="money">£14.61</td>
+        </tr>
+
+        <tr class="grey soProAverage">
+          <td>
+            <label for="static" class="col-form-label">SoPro Average</label>
+          </td>
+          <td>
+            <span>37%</span>
+          </td>
+          <td>
+            <div class="bar-group">
+              <h5 class="text-center grey">LEADS</h5>
+              <div class="bar blue" id="leads-bar">
+                <div class="bar-percent" id="leads-bar-percent"></div>
+              </div>
+            </div>
+          </td>
+          <td class="money">£39.58</td>
+        </tr>
+
+        <tr id="pitch-group">
+          <td>
+            <label for="prospect-universe" class="main-label">ENTER LEAD to PITCH Conversion</label>
+          </td>
+          <td>
+            <div class="input-group">
+              <input class="form-control" id="lead-pitch" maxlength="3"/>
+              <div class="input-group-append">
+                <span class="input-group-text">%</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="bar-group">
+              <h5 class="text-center grey">PITCH</h5>
+              <div class="bar green" id="pitch-bar">
+                <div class="bar-percent" id="pitch-bar-percent"></div>
+              </div>
+            </div>
+          </td>
+          <td class="grey money">£79.17</td>
+        </tr>
+
+        <tr id="propose-group">
+          <td>
+            <label for="prospect-universe" class="col-form-label main-label">ENTER PITCH to PROPOSAL Conversion</label>
+          </td>
+          <td>
+            <div class="input-group">
+              <input class="form-control" id="pitch-proposal" maxlength="3"/>
+              <div class="input-group-append">
+                <span class="input-group-text">%</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="bar-group">
+              <h5 class="text-center grey">PROPOSE</h5>
+              <div class="bar green" id="propose-bar">
+                <div class="bar-percent" id="propose-bar-percent"></div>
+              </div>
+            </div>
+          </td>
+          <td class="grey money">£158.33</td>
+        </tr>
+
+        <tr id="close-group">
+          <td>
+            <label for="prospect-universe" class="col-form-label main-label">ENTER PROPOSAL CLOSE RATE</label>              
+          </td>
+          <td>
+            <div class="input-group">
+              <input class="form-control" id="proposal-close" maxlength="3"/>
+              <div class="input-group-append">
+                <span class="input-group-text" id="input-append">%</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="bar-group">
+              <h5 class="text-center grey">CLOSE</h5>
+              <div class="bar green" id="close-bar">
+                <div class="bar-percent" id="close-bar-percent"></div>
+              </div>
+            </div>
+          </td>
+          <td class="grey money">£475</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
